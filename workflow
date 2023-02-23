@@ -11,3 +11,8 @@ dependencies:
         - redux
         - react-redux
     - react-router-dom
+
+workflow
+
+    - UI: bootstrap
+    -generik component for succes, error and confirmation
