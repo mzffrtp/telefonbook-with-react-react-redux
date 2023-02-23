@@ -16,3 +16,8 @@ workflow
 
     - UI: bootstrap
     -generik component for succes, error and confirmation
+    -header
+        whichpage, back arrow
+    -fetch actions in app.js X
+        useEffect, useDispatch X
+        validation X
