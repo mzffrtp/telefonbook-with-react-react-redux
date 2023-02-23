@@ -1,0 +1,12 @@
+{
+    "person":[{
+        "name":"ali veli",
+        "mobil":906827165,
+        "categoryId":"1"
+    }],
+    
+    "categories":[{
+        "id":"1",
+        "name":"family"
+    }]
+}
