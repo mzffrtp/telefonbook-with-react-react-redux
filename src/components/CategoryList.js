@@ -6,9 +6,9 @@ import { Link } from "react-router-dom";
 const CategoryList = () => {
 
     const { categoryState } = useSelector(state => state);
-    console.log(categoryState.categories);
-    const [selectedCategory, setSelectedCategory] = useState({});
-
+    const [selectedCategory, setSelectedCategory] = useState({
+       
+      })
 
     return (
         <div className="categoriesContainer">

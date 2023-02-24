@@ -33,4 +33,11 @@ workflow
                     general modal for errors
                     post to api
                     dispatch to store
-            - category actions
+            - category actions X
+    peoplelist
+        search input
+            value
+            onlcik
+        people container
+            - category validation
+            -table

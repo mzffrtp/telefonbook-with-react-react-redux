@@ -1,12 +1,14 @@
-import React from "react";
+import React, {useState} from "react";
 import CategoryList from "../components/CategoryList";
 import Header from "../components/Header"
+import ListPeople from "../components/ListPeoople";
 
 const HomePage = () =>{
+
     return(
         <div>
             <Header whichPage={"home"}/>
-            <CategoryList />
+            <ListPeople />
         </div>
     )
 }

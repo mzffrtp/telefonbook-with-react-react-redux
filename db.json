@@ -4,20 +4,25 @@
       "name": "ali veli",
       "mobil": 906827165,
       "categoryId": "1"
+    },
+    {
+      "name": "ali  50veli",
+      "mobil": 906827165,
+      "categoryId": "2"
     }
   ],
   "categories": [
     {
       "id": "1",
-      "name": "FAMILY"
+      "name": "Family"
     },
     {
       "id": "2",
-      "name": "WORK"
+      "name": "Work"
     },
     {
       "id": "3",
-      "name": "FRIENDS"
+      "name": "Friends"
     }
   ]
 }
