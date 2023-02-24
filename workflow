@@ -18,6 +18,19 @@ workflow
     -generik component for succes, error and confirmation
     -header
         whichpage, back arrow
-    -fetch actions in app.js X
-        useEffect, useDispatch X
-        validation X
+    -fetch actions in app.js 
+        useEffect, useDispatch 
+        validation 
+    - categoryactions
+        -category list
+            - store subscription
+            - fetch categories
+            - add category
+                - logic and styling
+                - input 
+                    state, value, onclick
+                    validation
+                    general modal for errors
+                    post to api
+                    dispatch to store
+            - category actions

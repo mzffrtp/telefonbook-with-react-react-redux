@@ -8,7 +8,7 @@ const GeneralModal = (
         clsBtnClck = () => { },
         cnfrmBtnTxt = "",
         cnfrmBtnClck = () => { },
-        isCnfrm = true,
+        isCnfrm = false,
     }
 ) => {
     return (

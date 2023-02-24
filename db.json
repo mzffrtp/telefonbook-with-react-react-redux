@@ -1,12 +1,23 @@
 {
-    "person":[{
-        "name":"ali veli",
-        "mobil":906827165,
-        "categoryId":"1"
-    }],
-    
-    "categories":[{
-        "id":"1",
-        "name":"family"
-    }]
+  "person": [
+    {
+      "name": "ali veli",
+      "mobil": 906827165,
+      "categoryId": "1"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "FAMILY"
+    },
+    {
+      "id": "2",
+      "name": "WORK"
+    },
+    {
+      "id": "3",
+      "name": "FRIENDS"
+    }
+  ]
 }

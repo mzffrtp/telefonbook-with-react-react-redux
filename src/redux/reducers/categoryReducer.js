@@ -18,12 +18,15 @@ const categoryReducer = (state = initialState, action) => {
         case actionTypes.categoryActions.GET_CATEGORY_SUCCESS:
             return {
                 ...state,
+                pending: false,
                 success: true,
                 categories: action.payload
             }
         case actionTypes.categoryActions.GET_CATEGORY_FAIL:
             return {
                 ...state,
+                pending: false,
+                success: false,
                 fail: true,
                 error: action.payload
             }

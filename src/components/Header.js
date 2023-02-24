@@ -1,9 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+
 import backArrow from "../assets/imgs/back-arrow.png";
 import logo from "../assets/imgs/phonebook.gif";
-import "../assets/styles/header.css"
+import "../assets/styles/header.css";
+
 
 const Header = ({ whichPage, navigateTo }) => {
+    const navigate = useNavigate();
 
     var showback = false;
     if (whichPage !== "home") {
@@ -16,6 +20,7 @@ const Header = ({ whichPage, navigateTo }) => {
                 showback === true && (
                     <div className="toBack">
                         <img
+                            onClick={()=> navigate(navigateTo)}
                             className="toBackImg"
                             src={backArrow}
                             alt="" />
@@ -24,7 +29,7 @@ const Header = ({ whichPage, navigateTo }) => {
 
             }
             <div className="headerContainerWrapper ms-5">
-                <h1>Telefon Book</h1>
+                <h1>Telephone Book</h1>
                 <img
                     className="headerLogo"
                     src={logo}
