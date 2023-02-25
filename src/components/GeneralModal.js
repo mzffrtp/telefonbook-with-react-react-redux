@@ -28,7 +28,7 @@ const GeneralModal = (
                 style={{
                     width: "70%",
                     padding: "20px",
-                    backgroundColor: "rgba(236, 243, 185,0.7)",
+                    backgroundColor: "rgba(236, 243, 185,0.99)",
                     borderRadius: "10px",
                 }}>
                 <h1 className="text-center">{title}</h1>

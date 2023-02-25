@@ -1,14 +1,10 @@
 {
   "person": [
     {
-      "name": "ali veli",
+      "id": "1",
+      "name": "ali veli edit",
       "mobil": 906827165,
       "categoryId": "1"
-    },
-    {
-      "name": "ali  50veli",
-      "mobil": 906827165,
-      "categoryId": "2"
     }
   ],
   "categories": [

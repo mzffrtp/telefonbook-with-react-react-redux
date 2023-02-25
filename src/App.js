@@ -7,6 +7,7 @@ import actionTypes from './redux/actions/actionTypes';
 import api from "./api/api";
 import urls from "./api/urls";
 import AddCategory from './pages/categorypages/AddCategory';
+import EditPerson from './pages/Personpages/EditPerson';
 
 
 function App() {
@@ -60,6 +61,7 @@ function App() {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path='/add-category' element={<AddCategory />}/>
+      <Route path='/edit-person/:personId' element={<EditPerson />}/>
     </Routes>
     </BrowserRouter>
   );
