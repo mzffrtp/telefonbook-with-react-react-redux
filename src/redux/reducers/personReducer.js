@@ -88,7 +88,7 @@ const personReducer = (state = initialState, action) => {
         case actionTypes.personActions.ADD_PERSON_SUCCESS:
             return {
                 ...state,
-                ppending: false,
+                pending: false,
                 success: true,
                 fail: false,
                 error: "",

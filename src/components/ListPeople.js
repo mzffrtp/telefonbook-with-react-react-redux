@@ -2,12 +2,13 @@ import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 
-import GeneralModal from "../components/GeneralModal"
+import GeneralModal from "./GeneralModal"
 import add from "../assets/imgs/add1.png";
 import "../assets/styles/listpeople.css";
 import api from "../api/api";
 import urls from "../api/urls";
-import actionTypes from "../redux/actions/actionTypes"
+import actionTypes from "../redux/actions/actionTypes";
+import openfolder from "../assets/imgs/openedfolder.gif";
 
 
 const ListPeople = () => {
@@ -56,12 +57,22 @@ const ListPeople = () => {
                     onChange={(event) => setSearchText(event.target.value)}
                 />
             </div>
-            <div className="d-flex justify-content-center my-1">
+            <div className="d-flex justify-content-center my-1 gap-5">
                 <Link
-                    to={""}
+                    to={"/add-person"}
                     className="btn btn-outline-info ">
                     Add Person <img
                         src={add}
+                        style={{
+                            width: "35px",
+                            margin: "5px"
+                        }} alt="" />
+                </Link>
+                <Link
+                    to={"/category-actions"}
+                    className="btn btn-outline-warning ">
+                    Category Actions <img
+                        src={openfolder}
                         style={{
                             width: "35px",
                             margin: "5px"
@@ -99,7 +110,7 @@ const ListPeople = () => {
                                         key={person.id}>
                                         <th>{index + 1}</th>
                                         <th>{person.name}</th>
-                                        <th>{personCat.name}</th>
+                                        <th>{personCat?.name}</th>
                                         <th className="d-flex justify-content-around">
                                             <button
                                                 onClick={() => {
@@ -109,8 +120,10 @@ const ListPeople = () => {
                                                 className="btn btn-outline-danger">Delete</button>
                                             <Link
                                             to={`/edit-person/${person.id}`}
-                                                className="btn btn-outline-warning">Edit</Link>
+                                                className="btn
+                                                btn-outline-warning">Edit</Link>
                                             <Link
+                                            to={`/info-person/${person.id}`}
                                                 className="btn btn-outline-info">Info</Link>
                                         </th>
                                     </tr>

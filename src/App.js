@@ -8,6 +8,9 @@ import api from "./api/api";
 import urls from "./api/urls";
 import AddCategory from './pages/categorypages/AddCategory';
 import EditPerson from './pages/Personpages/EditPerson';
+import InfoPerson from './pages/Personpages/InfoPerson';
+import AddPerson from './pages/Personpages/AddPerson';
+import CategoryActions from './pages/categorypages/CategoryActions';
 
 
 function App() {
@@ -62,6 +65,10 @@ function App() {
       <Route path="/" element={<HomePage />} />
       <Route path='/add-category' element={<AddCategory />}/>
       <Route path='/edit-person/:personId' element={<EditPerson />}/>
+      <Route path='/info-person/:personId' element={<InfoPerson />} />
+      <Route path='/add-person' element={<AddPerson />} />
+      <Route path='/category-actions' element={<CategoryActions />} />
+
     </Routes>
     </BrowserRouter>
   );

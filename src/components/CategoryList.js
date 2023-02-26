@@ -43,8 +43,6 @@ const CategoryList = () => {
                     <Link
                     to={"/add-category"}
                     className="btn btn-outline-success m-3">Add Category</Link>
-                    <Link
-                    className="btn btn-outline-primary my-3">Category Actions</Link>
                 </div>
             </div>
         </div>
