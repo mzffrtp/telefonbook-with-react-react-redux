@@ -11,7 +11,7 @@ import EditPerson from './pages/Personpages/EditPerson';
 import InfoPerson from './pages/Personpages/InfoPerson';
 import AddPerson from './pages/Personpages/AddPerson';
 import CategoryActions from './pages/categorypages/CategoryActions';
-
+import EditCategory from './pages/categorypages/EditCategory';
 
 function App() {
   const {personState, categoryState} = useSelector(state => state);
@@ -68,7 +68,7 @@ function App() {
       <Route path='/info-person/:personId' element={<InfoPerson />} />
       <Route path='/add-person' element={<AddPerson />} />
       <Route path='/category-actions' element={<CategoryActions />} />
-
+      <Route path='/edit-category/:categoryId' element={<EditCategory />} />
     </Routes>
     </BrowserRouter>
   );

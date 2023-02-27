@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 
@@ -6,8 +6,6 @@ import Header from "../../components/Header";
 import chat from "../../assets/imgs/chat.gif";
 import mail from "../../assets/imgs/mail.gif";
 import phone from "../../assets/imgs/phone.gif";
-import api from "../../api/api";
-import urls from "../../api/urls";
 
 
 
@@ -15,8 +13,14 @@ const InfoPerson = () => {
     const { personState, categoryState } = useSelector((state) => state)
     const params = useParams();
     const person = personState.people.find((item) => item.id === params.personId)
-    const personCat = categoryState.categories.find((item) => item.id === params.personId)
-    console.log(personCat);
+    console.log(person);
+
+    console.log(categoryState.categories);
+    const personcat = categoryState.categories.find( item => item.id === person.categoryId)
+    console.log(personcat);
+
+
+
 
 
 
@@ -48,8 +52,8 @@ const InfoPerson = () => {
                     <label htmlFor="name">Category:</label>
                     <input id="name"
                         type={"text"}
-                        value={personCat.name}
-                        onChange="" />
+                        value={personcat.name}
+                        />
                 </div>
             </div>
         </div>

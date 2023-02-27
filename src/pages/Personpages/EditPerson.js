@@ -11,11 +11,11 @@ import urls from "../../api/urls";
 
 const EditPerson = () => {
     const { personState, categoryState } = useSelector((state) => state)
-
     const params = useParams();
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const person = personState.people.find(item => item.id === params.personId)
+    console.log(person);
     const [form, setForm] = useState(person)
     const [errorModal, setErrorModal] = useState(false)
 

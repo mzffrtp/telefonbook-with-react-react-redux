@@ -20,7 +20,7 @@ const ListPeople = () => {
     const [filteredPerson, setFilteredPerson] = useState(personState.people)
 
     useEffect(()=>{
-        const temp = personState.people.filter(item =>
+        const temp = personState.people.filter((item) =>
             item.name.toLocaleLowerCase().includes(searchText.toLocaleLowerCase()));
             setFilteredPerson(temp)
 
@@ -35,6 +35,7 @@ const ListPeople = () => {
                     type: actionTypes.personActions.DELETE_PERSON_SUCCESS,
                     payload: id
                 })
+            window.location.reload()
 
             })
             .catch((err) => {

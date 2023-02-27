@@ -1,5 +1,4 @@
-import React, {useState} from "react";
-import CategoryList from "../components/CategoryList";
+import React from "react";
 import Header from "../components/Header"
 import ListPeople from "../components/ListPeople";
 
