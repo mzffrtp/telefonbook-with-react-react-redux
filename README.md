@@ -3,13 +3,13 @@
 
 ##### 
 User can,
-    - add, delete, edit person and categories at as his/her wish
+    - add, delete, edit person and category sections at as his/her wish
     - search for the people in telephone book
 
 ##### 
 
     - json server
-        -install, db.json, run
+      
     - axios 
         - used as an instance for typos (create baseURL, api, urls)
     - state management 
